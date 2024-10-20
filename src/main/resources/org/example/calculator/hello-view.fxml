@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="327.0" prefWidth="332.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.calculator.CalculatorController">
+  <children>
+    <TextField fx:id="text" alignment="TOP_RIGHT" layoutX="42.0" layoutY="24.0" prefHeight="59.0" prefWidth="226.0" text="0">
+      <font>
+        <Font size="31.0" />
+      </font>
+    </TextField>
+    <GridPane alignment="TOP_CENTER" layoutX="51.0" layoutY="129.0">
+      <columnConstraints>
+        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="75.0" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="75.0" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="75.0" minWidth="10.0" prefWidth="100.0" />
+      </columnConstraints>
+      <rowConstraints>
+        <RowConstraints valignment="CENTER" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+      <children>
+        <Button mnemonicParsing="false" onAction="#onClickBut0" text="0" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+        <Button mnemonicParsing="false" onAction="#onClickBut1" text="1" GridPane.rowIndex="1"/>
+        <Button mnemonicParsing="false" onAction="#onClickBut2" text="2" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+        <Button mnemonicParsing="false" onAction="#onClickBut3" text="3" GridPane.columnIndex="2" GridPane.rowIndex="1"/>
+        <Button mnemonicParsing="false" onAction="#onClickBut4" text="4" GridPane.rowIndex="2"/>
+        <Button mnemonicParsing="false" onAction="#onClickBut5" text="5" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+        <Button mnemonicParsing="false" onAction="#onClickBut6" text="6" GridPane.columnIndex="2" GridPane.rowIndex="2"/>
+        <Button mnemonicParsing="false" onAction="#onClickBut7" text="7" GridPane.rowIndex="3"/>
+        <Button mnemonicParsing="false" onAction="#onClickBut8" text="8" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+        <Button mnemonicParsing="false" onAction="#onClickBut9" text="9" GridPane.columnIndex="2" GridPane.rowIndex="3"/>
+        <Button mnemonicParsing="false" onAction="#onPlusClick" text="+" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+        <Button mnemonicParsing="false" onAction="#onMinusClick" text="-" GridPane.rowIndex="5" GridPane.columnIndex="1"/>
+        <Button mnemonicParsing="false" onAction="#onMultiplyClick" text="*" GridPane.rowIndex="5" GridPane.columnIndex="2"/>
+        <Button mnemonicParsing="false" onAction="#onDivideClick" text="/" GridPane.rowIndex="5" GridPane.columnIndex="1"/>
+        <Button mnemonicParsing="false" onAction="#onEqualClick" text="=" GridPane.rowIndex="4" GridPane.columnIndex="1" />
+        <Button mnemonicParsing="false" onAction="#onClearClick" text="C" GridPane.rowIndex="4" GridPane.columnIndex="2" />
+      </children>
+    </GridPane>
+  </children>
+</AnchorPane>
