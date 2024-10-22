@@ -12,7 +12,7 @@ public class CalculatorController {
     private TextField text;
 
     @FXML
-    private void onClickBut0() {
+    public void onClickBut0() {
         appendToTextField("0");
     }
 
@@ -22,16 +22,16 @@ public class CalculatorController {
     }
 
     @FXML
-    private void onClickBut2() {
+    public void onClickBut2() {
         appendToTextField("2");
     }
     @FXML
-    private void onClickBut3() {
+    public void onClickBut3() {
         appendToTextField("3");
     }
 
     @FXML
-    private void onClickBut4() {
+    public void onClickBut4() {
         appendToTextField("4");
     }
 
@@ -51,37 +51,37 @@ public class CalculatorController {
     }
 
     @FXML
-    private void onClickBut8() {
+    public void onClickBut8() {
         appendToTextField("8");
     }
 
     @FXML
-    private void onClickBut9() {
+    public void onClickBut9() {
         appendToTextField("9");
     }
 
     @FXML
-    private void onPlusClick() {
+    public void onPlusClick() {
         setOperator('+');
     }
 
     @FXML
-    private void onMinusClick() {
+    public void onMinusClick() {
         setOperator('-');
     }
 
     @FXML
-    private void onMultiplyClick() {
+    public void onMultiplyClick() {
         setOperator('*');
     }
 
     @FXML
-    private void onDivideClick() {
+    public void onDivideClick() {
         setOperator('/');
     }
 
     @FXML
-    private void onEqualClick() {
+    public void onEqualClick() {
         String op2 = text.getText();
         calc.setOp2(Double.parseDouble(op2));
         calc.calculate();
