@@ -25,6 +25,9 @@ To run this application, you will need the following installed on your machine:
 3. Press the `=` button to see the result.
 4. Press the `C` button to clear the display and reset the calculator.
 
+![Screenshot 2024-10-22 235259](https://github.com/user-attachments/assets/07c3e519-e456-42a0-84f9-40117ffaaf2c)
+
+
 
 
 
